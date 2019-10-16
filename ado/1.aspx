@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:GridView ID="GridView1" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84"
+        <asp:GridView ID="GridView1-test" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84"
             BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
             <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
             <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
