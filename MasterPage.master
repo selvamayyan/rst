@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width: 100%; background: #FF9900" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <asp:Label ID="Lblmaster" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Image ID="Heading1" ImageUrl="~/common/image/topBanner_short_right.jpg" runat="server" />
+            </td>
+            <asp:Panel ID="pnlMasterSearch" runat="server">
+            Name:<asp:TextBox ID="TxtMasterName" runat="server"></asp:TextBox>
+                <asp:Button ID="btnMasterSearch" runat="server" Text="Button" />
+            </asp:Panel>
+            
+
+        </tr>
+        <tr>
+            <td>
+                <asp:SiteMapPath ID="Sitemappath1"    runat="server">
+                </asp:SiteMapPath>
+            </td>
+        </tr>
+        
+        <tr>
+        <td>
+      <%--  <asp:SiteMapDataSource id="mySitemapDataSource" runat="server"><asp:SiteMapDataSource>--%>
+        </td>
+        </tr>
+    </table>
+    <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td align="left" valign="top" style="width: 15%">
+                <asp:TreeView ID="tvw"  runat="server">
+                </asp:TreeView>
+                <br />
+               
+                <asp:TextBox ID="TxtMaster" runat="server"></asp:TextBox>
+                
+            </td>
+            <td>
+                <asp:ContentPlaceHolder ID="Main" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
