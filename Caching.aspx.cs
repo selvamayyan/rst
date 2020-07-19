@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 public partial class Caching : System.Web.UI.Page
 {
-      
+      //MyChanges...
     SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.AppSettings["ConnectionString"].ToString());
     protected void Page_Load(object sender, EventArgs e)
     {
